@@ -32,9 +32,9 @@ public class QuickSorter extends Sorter {
         			display.updateDisplay();
         			j--;
         			if(i<=j) {
-        				int holder = i;
-        				i = j;
-        				j = holder;
+        				int holder = array[i];
+        				array[i] = array[j];
+        				array[j] = holder;
         				i++;
         				j--;
         			}

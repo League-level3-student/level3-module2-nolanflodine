@@ -42,14 +42,14 @@ public class HeapSorter extends Sorter {
 		//2. create an integer called largest and set it equal to i
 	int largest = i;
 		//3. create an integer called l and set it equal to 2 * i + 1
-        int one = 2*i+i;
+        int l = 2*i+1;
 		//4. create an integer called r and set it equal to 2 * i + 2
         int r = 2*i + 2;
         //5. if l is less than n 
         //   and array element at l is greater than array element at largest
         //   then set largest equal to l
-        if(one<n && array[one]>array[largest]) {
-        	largest = one;
+        if(l<n && array[l]>array[largest]) {
+        	largest = l;
         }
  
         //6. if r is less than n 

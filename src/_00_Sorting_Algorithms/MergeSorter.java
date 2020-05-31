@@ -60,9 +60,10 @@ public class MergeSorter extends Sorter {
                    array[k] = temp[j];
                     //15. increase j by 1
                    j++;
+                }
                 //16. increase k by 1
                    k++;
-                }
+                
             }
             
             //17. make a while loop that runs while i is less than or equal to middle
