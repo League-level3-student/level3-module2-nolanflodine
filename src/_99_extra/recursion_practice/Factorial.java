@@ -11,9 +11,17 @@ public class Factorial {
 	public static int factorial(int n) {
 		//1. If n is zero
 			//2. return 1
-		
 			//3. else return n * factorial(n-1)
-		return 0;
+		int fac = 0;
+		if(n==0) {
+			return 1;
+		}
+		else {
+			for(int i = 0; i<=n; i++) {
+			fac += n*(n-1);
+			}
+			return fac;
+		}
 	}
 	
 	public static void main(String[] args) {

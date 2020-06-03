@@ -28,22 +28,27 @@ public class BogoSorter extends Sorter {
 		int last = -100;
 		int len = 0;
 		while (!sorted) {
+			display.updateDisplay();
 			for (int i = 0; i < array.length; i++) {
 				if (array[i] > last) {
 					len++;
 				}
+				/*else {
+					len = 0;
+					i = 0;
+				}
+				*/
 				if (len == array.length) {
 					sorted = true;
 				}
 				last = array[i];
-				val = r.nextInt(250);
-				val2 = r.nextInt(250);
-				if (array[val] > array[val2]) {
-					holder = array[val2];
-					array[val] = array[holder];
-					array[val2] = array[val];
-				}
 			}
-		}
-	}
+			len = 0;
+				val = r.nextInt(array.length);
+				val2 = r.nextInt(array.length);
+					holder = array[val2];
+					array[val2] = array[val];
+					array[val] = holder;
+			}
+		}	
 }
